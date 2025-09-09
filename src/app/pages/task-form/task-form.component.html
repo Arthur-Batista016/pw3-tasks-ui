@@ -21,7 +21,7 @@
       <option value="COMPLETED">Concluída</option>
     </select>
 
-    <button type="submit" [disabled]="taskForm.invalid">
+    <button type="submit" [disabled]="taskForm.invalid" (click)="postTask">
       {{ id ? 'Atualizar' : 'Salvar' }}
     </button>
   </form>
